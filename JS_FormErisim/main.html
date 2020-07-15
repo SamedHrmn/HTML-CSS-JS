@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>FormVeInputlaraErisim</title>
+</head>
+
+
+<script>
+    function tikla() {
+        var deger = document.form1.username.value; /* Javascriptte formlara ve ordaki değerlere erişmenin bir yolu*/
+        /*var deger = document.forms["form1"]["username"].value;   bu da diğer bir yol .*/
+        if (deger == "")
+            window.alert("Lütfen bir şey yazın.");
+        else
+            window.alert(deger);
+    }
+</script>
+
+
+<body>
+    <form name="form1" method="post" action="gonder.php">
+        Kullanıcı Adı:<input type="text" name="username" /><br />
+        <button onclick="tikla()">Tikla</button>
+
+
+    </form>
+
+
+
+
+
+
+</body></html>

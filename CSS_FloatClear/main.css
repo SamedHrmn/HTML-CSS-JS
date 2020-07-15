@@ -1,0 +1,51 @@
+.foto {
+    float: left;
+    /*Fotoğrafımızı sola yaslayacak ve bundan sonra gelen paragraf
+    fotoğrafın altına değil de sağına gelmiş olacak*/
+}
+
+.paragraf {
+    /*float left komutunu temizler,right ise float right temizler,both her ikisini de.*/
+    clear: left;
+}
+
+
+div.sol_sutun {
+    background-color: turquoise;
+    height: 200px;
+    width: 200px;
+    text-align: center;
+    margin: 10px;
+
+    float: left;
+}
+
+div.orta_sutun {
+    background-color: red;
+    height: 200px;
+    width: 200px;
+    text-align: center;
+    margin: 10px;
+
+    float: left;
+}
+
+div.sag_sutun {
+    background-color: magenta;
+    height: 200px;
+    width: 200px;
+    text-align: center;
+    margin: 10px;
+
+    float: left;
+}
+
+div.footer {
+    background-color: aquamarine;
+    height: 200px;
+    width: 1000px;
+    text-align: center;
+    margin: 10px;
+
+    clear: both;
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title> SeçmeListeleri</title>
+    <link rel="stylesheet" href="main.css" />
+
+</head>
+
+<body>
+    <form action="" method="">
+        Yemek Listesi <br />
+        <select name="yemek" multiple>
+            <!-- multiple komutu ile combo boxta ctrl tuşuna basılı tutarak birden çok seçim yapılabilir -->
+            <!-- optgroup combobox içinde gruplama yapmayı sağlar-->
+            <optgroup label="Ana Yemekler">
+                <option value="yemek1">İskender</option>
+                <option value="yemek2">Çorba</option>
+                <option value="yemek3" selected>Adana Kebabı</option>
+            </optgroup>
+            <!-- selected komutu sayfa yenilendiğinde o değerin gelmesini sağlar. -->
+
+            <optgroup label="Tatlılar">
+                <option value="yemek4">Waffle</option>
+                <option value="yemek5">Trileçe</option>
+            </optgroup>
+
+
+        </select>
+
+    </form>
+
+</body></html>

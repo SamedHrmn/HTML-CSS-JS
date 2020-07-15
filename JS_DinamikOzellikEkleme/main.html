@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>DinamikOzellikler</title>
+</head>
+
+<style>
+    .kirmizi {
+        color: red;
+        background-color: yellow;
+    }
+
+</style>
+
+<script>
+    function degistir() {
+        /*Dinamik olarak elemente class vermek*/
+        var elementler = document.getElementsByTagName("h3");
+        for (var i = 0; i < elementler.length; i++) {
+            var ozellik = document.createAttribute("class");
+            ozellik.value = "kirmizi";
+
+            elementler[i].setAttributeNode(ozellik);
+        }
+
+        /*Dinamik olarak a etiketine href vermek*/
+
+        var hrefozelligi = document.createAttribute("href");
+        hrefozelligi.value = "https://www.google.com.tr/";
+        document.getElementById("aetiketi").setAttributeNode(hrefozelligi);
+
+
+    }
+
+</script>
+
+<body>
+
+    <div id="anakısım" style="background-color: antiquewhite">
+        <h3>Birinci Hikaye</h3>
+
+        <p>
+            We drove out the orcs from the Great Gate and guardroom and took the First Hall. We slew many in the bright sun in the dale. Flói was killed by an arrow. He slew the great chieftain. We buried…Flói under grass near Mirrormere…came…ken we repaired…We have taken the Twenty-first Hall of North End to dwell in. There is good air…that can easily be watched…the shaft is clear…Balin has set up his seat in the Chamber of Mazarbul…gathered…gold…wonderful lay Durin’s Axe and…silver helm. Balin has taken them for his own. Balin is now lord of Moria:…today we found truesilver…well-forged helm…made all of purest mithril…Óin to seek for the upper armories of the Third Deep…go westwards to s…to Hollin Gate.
+        </p>
+
+        <h3>İkinci Hikaye</h3>
+
+        <p>
+            …years since…ready sorrow…yesterday being the tenth of November Balin, lord of Moria, fell in Dimrill Dale. He went alone to look in Mirrormere. An orc shot him from behind a stone. We slew the orc, but many more came…up from east up the Silverlode…we rescued Balin’s body..after a sharp battle…we have barred the gates but doubt if…we can hold them long. If there is…no escape it will be a horrible fate to suffer, but I shall hold.
+
+        </p>
+
+
+        <a id="aetiketi">Buraya Tıklayın</a>
+
+    </div>
+
+
+    <button onclick="degistir()">Degistir</button>
+
+
+
+
+</body>
+
+</html>

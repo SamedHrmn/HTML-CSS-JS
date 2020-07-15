@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+    <meta charset="utf-8" />
+    <title>BirdenCokElementiSecmek</title>
+</head>
+
+<body>
+
+    <script>
+        function tikla() {
+            var elementler = document.getElementsByTagName("p");
+            /*getElementByTagName ile birden fazla element bize bir array olarak döner.*/
+            for (var x = 0; x < elementler.length; x += 2) {
+                elementler[x].style.color = "red";
+            }
+            /*getElementsByClassName 'de aynı işlevi görür,sadece class bilgisi üzerinden elemente erişir.*/
+            var elementler_2 = document.getElementsByClassName("class1");
+            for (var x = 0; x < elementler_2.length; x++) {
+                elementler_2[x].style.backgroundColor = "bisque";
+            }
+        }
+    </script>
+
+    <p>Ah Yalan Dünyada</p>
+    <p class="class1">Yalan Dünyada</p>
+    <p>Yalandan Yüzüme</p>
+    <p class="class1">Gülen Dünyada</p>
+
+    <button onclick="tikla()">Tıkla</button>
+
+
+
+</body></html>

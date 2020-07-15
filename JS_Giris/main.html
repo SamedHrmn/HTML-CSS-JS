@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>JavaScript Giris</title>
+    <!-- JavaScript,HTML5 ve CSS3 ile birlikte web sayfasının interaktifliğini artırmak için kullanılan gerekli bir programlama dilidir.-->
+
+</head>
+
+<body>
+
+    <p id="paragraf"></p>
+
+    <script>
+        document.getElementById("paragraf").innerHTML = "Hello JavaScript";
+        /*getElementById ile html elementine id'si ile ulaşabiliriz.Hatta innerHTML ile elementin referansını alıp onu manipüle edebiliriz.*/
+        window.alert("Hop hemşerim nereye");
+
+        function Yazdır(mesaj) {
+            document.write(mesaj);
+        }
+    </script>
+
+
+    <input type="button" value="Tıkla" onclick="Yazdır('Selam')" />
+    <!-- Butonların onclick parametresine JavaScript fonksiyonlarını vererek onları çağırabiliriz.-->
+    <!-- İstediğin yerde de çağırabilirsin tabii ki-->
+
+</body></html>

@@ -1,0 +1,15 @@
+div {
+    /*Div bir block elementidir.*/
+    border: 2px groove red;
+    background-color: yellow;
+    width: 150px;
+    height: 100px;
+    padding: 50px;
+    margin: 5px;
+}
+
+span {
+    /*Span ise satır içi elementtir.*/
+    text-decoration: underline;
+    text-decoration-color: brown;
+}

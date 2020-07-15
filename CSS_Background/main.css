@@ -1,0 +1,19 @@
+div {
+    height: 256px;
+    width: 100%;
+    padding-top: 190px;
+    margin: 40px 20px;
+    font: bold 16px Tahoma;
+    color: brown;
+    /*Genişlik full için 100% */
+
+}
+
+body {
+    background-image: url(darthVader.png);
+    background-repeat: no-repeat;
+    /* Resim sayfa boyu tekrarlanmaz.*/
+    background-attachment: fixed;
+    /*Sayfa slide edilince resim sabit kalır*/
+    background-color: white;
+}

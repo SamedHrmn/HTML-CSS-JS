@@ -1,2 +1,2 @@
 # HTML-CSS-JS
-Html-css-js çalışmalarım.
+ Html-css-js çalışmalarım

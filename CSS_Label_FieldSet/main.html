@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+    <meta charset="utf-8" />
+    <title>FieldSet And Label</title>
+
+<body>
+
+    <form action="" method="">
+
+        <fieldset>
+            <!-- fieldset inputları gruplandırır ve etraflarına çizgi çeker-->
+            <legend>Kişisel Bilgiler</legend> <!-- legend fieldset grubuna başlık verir-->
+            <!-- labeller ise id'si ile ilişkilendirilmiş inputu harekete geçiri,Örneğin form'da İsim text'ine basılırsa imleç input kutusuna geçer.-->
+            <label for="isim">İsim:</label><input type="text" name="isim" id="isim" /><br />
+            <label for="soyisim">Soyisim:</label><input type="text" name="soyisim" id="soyisim" /><br />
+        </fieldset><br /><br />
+
+        <fieldset>
+
+            <legend>Hobiler</legend>
+            <label for="basket">Basketbol Oynamak:</label><input type="checkbox" name="hobiler" value="basket" id="basket" />
+
+            <label for="gitar">Gitar Çalmak:</label><input type="checkbox" name="hobiler" value="gitar" id="gitar" />
+
+            <label for="resim">Resim Yapmak:</label><input type="checkbox" name="hobiler" value="resim" id="resim" />
+
+        </fieldset>
+
+
+
+    </form>
+
+</body>
+
+</head></html>

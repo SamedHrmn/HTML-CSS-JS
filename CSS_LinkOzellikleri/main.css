@@ -1,0 +1,18 @@
+a {
+    font-size: 40px;
+}
+
+a:hover {
+    /*İmleç linkin üzerine geldiğindeki özellikler*/
+    color: aqua;
+}
+
+a:active {
+    /*Linke basılı tutarkenki özellikler*/
+    color: red;
+}
+
+a:visited {
+    /*Link ziyaret edildikten sonraki özellikler*/
+    color: brown;
+}

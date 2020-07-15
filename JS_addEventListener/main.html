@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>ElementlerVeEventler</title>
+</head>
+
+<body>
+
+    <script>
+        var buton = document.getElementById("buton");
+        buton.addEventListener("click", tikla); /*İlk parametre verilecek event,diğeri ise çalışacak fonksiyon.*/
+        buton.addEventListener("mouseover", mouseover);
+        buton.addEventListener("mouseout", mouseout);
+        /*Elementlere event vermek için daha derli toplu bir yöntem,o yüzden addEventistenera kullan.*/
+        function tikla() {
+            document.getElementById("para").innerHTML = "Tiklandi..";
+
+        }
+
+        function mouseover() {
+            document.getElementById("para").innerHTML = "MouseOver";
+
+        }
+
+        function mouseout() {
+            document.getElementById("para").innerHTML = "MouseOut";
+
+        }
+    </script>
+
+    <button id="buton">Buton</button><br>
+
+    <p id="para"></p>
+
+
+
+</body></html>

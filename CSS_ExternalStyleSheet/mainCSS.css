@@ -1,0 +1,30 @@
+p {
+    color: red;
+
+    /* Padding özellikleri,yazının boşluk bırakma düzeylerini ayarladık.
+       Her kenardan tek deger için sadece -> padding : pixelDegeri.*/
+    padding: 60px 10px 10px 60px;
+    /*Sırayla: top,right,bottom,left */
+}
+
+h1 {
+    background-color: yellow;
+    color: blue;
+    border-top: 5px dotted green;
+    /*Sadece üst taraf için çerçeve,parametreler normal border ile aynen geçerlidir.*/
+}
+
+h2 {
+    /*Font özelliklerini belirttik*/
+    font: bold italic 16px Tahoma;
+    border: 10px groove red;
+    /*Çerçeve parametreleri:Kalınlık,tip,renk*/
+
+    margin: 50px;
+    /*Her taraftan piksel değeri kadar içerden konumlandırır.
+    Yine padding gibi farklı yönler için ayrı ayrı belirtilebilir,
+    Parametre düzeni aynıdır.*/
+
+    /*Eğer sayfada bitişik bir body görünümü istiyorsan body etiketinin
+    margin ve padding özelliklerini 0px yapabilirsin.*/
+}

@@ -1,0 +1,34 @@
+.blackP {
+    /*Bir class'ı istedigin elemente verebilirsin, p h1 h2 vs..*/
+    background-color: yellow;
+    text-decoration: underline;
+    color: black;
+}
+
+.redP {
+    background-color: paleturquoise;
+    color: red;
+}
+
+#firstId {
+    /*ID'lerin classlardan en önemli farkı sadece 1 yerde kullanılırlar*/
+    /*Bu da sayfalarda bazı belli yerlere gitmek için kullanılır*/
+    background-color: aquamarine;
+    color: maroon;
+    border: 10px groove;
+
+}
+
+.yellow h2 {
+    /* Parent'i yellow class'ını kullanan tüm h2'lere özellik verir*/
+    /*div etiketi içine yazdığın etiketler div'in childları olur.*/
+    color: yellow;
+    background-color: black;
+}
+
+#magenta-id h1 {
+    color: magenta;
+    background-color: burlywood;
+    border: 8px solid blue;
+
+}

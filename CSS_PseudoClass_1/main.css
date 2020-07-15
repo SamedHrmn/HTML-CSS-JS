@@ -1,0 +1,19 @@
+p:first-letter {
+    /*Sözde sınıfların bu şekil keywordleri ile metinlerimize değişik*/
+    /*özellikler kazandırabiliyoruz.*/
+    color: red;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+p:first-child {
+    color: orange;
+}
+
+p:before {
+    content: url(arrow.png);
+}
+
+p:after {
+    content: "<--->";
+}

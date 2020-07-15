@@ -1,0 +1,38 @@
+ul.a {
+    font-size: 20px;
+    list-style-type: circle;
+}
+
+ul.b {
+    font-size: 20px;
+    list-style-type: square;
+}
+
+ol.c {
+    font-size: 20px;
+    list-style-type: upper-roman;
+}
+
+ol.d {
+    font-size: 20px;
+    list-style-type: lower-greek;
+}
+
+ol li {
+    /*Her bir liste elemanına özellik kazandırır.*/
+    /*li etiketi hem ol hem ul'de bulunduğu için hangisindeki olduğunu bu
+    şekilde belirtmemiz gerekiyor.*/
+    color: blue;
+}
+
+.kose {
+    border: solid 10px;
+    border-radius: 40px;
+    /*Köşeli border*/
+    /*pedding ve margin'deki parametre
+    mantığını uygulayabilirsin.*/
+    border-color: aqua;
+    width: 200px;
+    height: 125px;
+    padding: 20px;
+}

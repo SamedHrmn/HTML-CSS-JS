@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+    <meta charset="utf-8" />
+    <title>Form Özellikleri</title>
+    <link rel="stylesheet" href="main.css" />
+
+</head>
+
+<body>
+
+    <form action="" method="">
+
+        <fieldset>
+            <legend>Kişisel Bilgiler</legend>
+
+            <p>
+                <label for="isim">İsim:</label><input type="text" name="isim" id="isim">
+
+            </p>
+
+            <p>
+                <label for="soyisim">Soyisim:</label><input type="text" name="soyisim" id="soyisim">
+
+            </p>
+
+            <p>
+                <label for="email">Email:</label><input type="text" name="email" id="email">
+
+            </p>
+
+            <p>
+                <label for="adres">Adresiniz</label><br /><br />
+                <textarea name="adres" id="adres" rows="5" cols="35" placeholder="Adresiniz"></textarea>
+            </p>
+
+            <label for="sehir">Nerede Yaşıyorsunuz?</label><br />
+            <p>
+                <select name="sehir" id="sehir">
+                    <option value="Ankara">Ankara</option>
+                    <option value="İstanbul">İzmir</option>
+                    <option value="Yozgat">Yozgat</option>
+                    <option value="San Fransisco" selected>San Fransisco</option>
+                </select>
+            </p>
+
+            <p>
+                Bildirim almak istiyor musunuz?
+                <label for="evet">Evet</label><input type="radio" name="Evet" id="evet" />
+                <label for="hayır">Hayır</label><input type="radio" name="Evet" id="hayır" />
+
+                <!-- radio buttonlardan tek birinin seçilebilmesi için name kısmının aynı olması gerekir-->
+
+            </p>
+
+        </fieldset><br />
+
+
+        <fieldset>
+            <legend>Hobiler</legend>
+            <label for="basket">Basketbol Oynamak</label><input type="checkbox" name="basket" value="basket" id="basket" />
+
+            <label for="gitar">Gitar Çalmak</label><input type="checkbox" name="gitar" value="gitar" id="gitar" />
+
+            <label for="resim">Resim Yapmak</label><input type="checkbox" name="resim" value="resim" id="resim" />
+
+        </fieldset>
+
+
+
+    </form>
+
+</body></html>

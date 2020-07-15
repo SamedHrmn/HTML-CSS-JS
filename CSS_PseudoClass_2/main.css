@@ -1,0 +1,12 @@
+p {
+    font-size: 20px;
+}
+
+p:nth-child(3n) {
+    /*3'ün katı olan child'lara özellik verir*/
+    /*Verdiğin parametreye göre çocukları seçer*/
+    /*odd ve even ile tek çift yapabilirsin.*/
+    /*Direkt child'ın sıra numarasını da verebilirsin.s*/
+    background-color: cadetblue;
+    color: brown;
+}

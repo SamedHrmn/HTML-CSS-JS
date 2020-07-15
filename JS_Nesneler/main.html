@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Nesne Yapısı</title>
+
+
+</head>
+
+<body>
+    <script>
+        var pc1 = {
+            /* Nesne oluşturma */
+            marka: "Dell",
+            model: "Inspiron 15",
+            ram: "8GB",
+            CPU_Clock: 2.50,
+            yazdir: function() {
+                window.alert(this.CPU_Clock); /* Fonksiyondan üye elemana erişmek için this keywordü şartı var.*/
+            }
+        };
+
+        pc1.yazdir();
+    </script>
+
+
+
+</body></html>

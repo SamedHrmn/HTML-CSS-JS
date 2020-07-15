@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+    <meta charset="utf-8" />
+    <title>FormApileri</title>
+</head>
+
+<body>
+
+    <script>
+        function kontrol() {
+            var x = document.getElementById("sayi");
+            if (x.checkValidity() == false) {
+                /*x degiskeni için belirtilen kısıtlamalar doğru mu diye kontrol eder.*/
+                window.alert(x.validationMessage);
+                /*validationMessage özelliği ise JavaScript'in ürettiği kendi mesajlardır.*/
+            } else
+                window.alert(x.validationMessage);
+        }
+    </script>
+
+    <input id="sayi" type="number" min="50" max="100" required /> <!-- required keywordü ilgili alanın boş bırakılamayacağını söyler,HTML5 özelliğidir.-->
+    <button onclick="kontrol()">Kontrol Et</button>
+
+</body></html>

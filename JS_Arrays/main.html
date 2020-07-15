@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Array Yapısı</title>
+
+
+</head>
+
+<body>
+    <script>
+        var tarih = ["10", "10", "2019"];
+        var yazi = tarih.join("/"); /* join methodu ile dizideki her eleman arasına istenilen karakteri koyabiliriz*/
+        document.writeln(yazi + "<br>");
+
+
+
+        var sayilar = [1, 8, 3, 4, 5, 6, 7];
+
+        sayilar.pop(); /*pop fonksiyonu çıkardığı elemanı değer olarak da döndürür.Bir değişkene atayıp kullanabilirsin.*/
+        document.write(sayilar + "<br>");
+
+        sayilar.push(15); /* push fonksiyonu da geri dönüş değeri olarak yeni dizi uzunluğunu döndürür.*/
+        document.write(sayilar + "<br>");
+
+        var isimler = ["Ahmet", "Mehmet", "Carl"];
+        isimler.sort(); /* sort methodu küçükten büyüğe sıralar.*/ /*sort methodu parametresiz olarak sadece string içeren dizilerde düzgün çalışır.*/
+        document.write(isimler + "<br>");
+
+        sayilar.sort(function(a, b) {
+            /*sort methodunun int değerler üzerinde çalışabilmesi için bu şekilde parametre verilir.*/
+            return a - b
+        });
+
+
+        document.write("Sıralı sayılar= " + sayilar + "<br>");
+
+        isimler.reverse(); /*reverse methodu diziyi ters çevirir*/
+        document.write(isimler);
+    </script>
+
+
+
+
+</body></html>

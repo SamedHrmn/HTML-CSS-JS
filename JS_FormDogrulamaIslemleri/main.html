@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+    <meta charset="utf-8" />
+    <title>FormDogrulama</title>
+</head>
+
+<script>
+    function dogrula() {
+        var deger = document.formisim.isim.value;
+
+        if (deger == "") {
+            window.alert("İsim alanı boş bırakılamaz");
+            return false;
+            /*onsubmit eventinin sayfayı başka sayfaya yönlendirmemesi
+                        için fonksiyonu false olarak döndürdük.*/
+        }
+
+
+    }
+</script>
+
+<body>
+    <!-- Bir web sayfasında eventler kullanıldığında sayfa olağandışı bir duruma geçer
+     tekrar eski haline gelemez.Bu yüzden form etiketi içinde evenlerin dönüş değerleri
+     return false olarak verilir.-->
+
+    <form name="formisim" action="gönder.php" onsubmit="return dogrula()" method="post">
+        İsim Alanı:<input type="text" name="isim"><br>
+
+        <input type="submit" value="Gönder">
+
+    </form>
+
+
+</body></html>
