@@ -1,2 +1,2 @@
 # HTML-CSS-JS
- Html-css-js çalışmalarım
+ HTML-CSS-JAVASCRIPT dillerine ait bazı pratik çalışmalarım.
